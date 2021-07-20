@@ -38,6 +38,6 @@ public class DeveloperRestController {
 
     @DeleteMapping("/delete/{id}")
     public boolean delete(@PathVariable Long id) {
-        return DEVELOPERS.remove(delete());
+        return DEVELOPERS.remove(id);
     }
 }
