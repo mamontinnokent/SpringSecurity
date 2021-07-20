@@ -1,6 +1,10 @@
 package com.security.security_demo.rest;
 
+<<<<<<< Updated upstream
 import com.security.security_demo.entity.Developer;
+=======
+import com.security.security_demo.model.Developer;
+>>>>>>> Stashed changes
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +24,7 @@ public class DeveloperRestController {
     ).collect(Collectors.toList());
 
 
-@GetMapping
+    @GetMapping
     public List<Developer> getAll() {
         return DEVELOPERS;
     }
